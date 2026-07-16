@@ -10,8 +10,9 @@ function App() {
 
   // let counter =10
 const addValue = ()=> {
-  counter = counter + 1
-  setCounter(counter)
+  // counter = counter + 1
+  setCounter(prevcounter => prevcounter+1)
+  setCounter(prevcounter =>prevcounter +1)
   console.log("value added" , counter);
 }
 
